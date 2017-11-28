@@ -1,0 +1,44 @@
+{
+    "document_root": "/var/www/html",
+    "login": "piwik",
+    "password": "piwikpiwik",
+    "token_auth": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+    "email": "foo@bar.com",
+    "site_name": "data.gouv.fr",
+    "site_url": "http://www.data.gouv.fr",
+    "base_domain": "www.data.gouv.fr",
+    "session_save_handler": "dbtable",
+    "geo_provider": "geoip_pecl",
+    "database": {
+        "host": "db",
+        "adapter": "Pdo\\Mysql",
+        "username": "piwik",
+        "password": "piwik",
+        "dbname": "piwik",
+        "tables_prefix": "piwik_"
+    },
+    "branding": {
+        "header_url": "https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.6/assets/png/261d-1f3fb.png"
+    },
+    "privacy": {
+        "anonymize_ip": true,
+        "honor_do_not_track": true
+    },
+    "plugins": [
+    ],
+    "deactivate_plugins": [
+    ],
+    "extras": {
+        "General": {
+            "enable_framed_pages": 1,
+            "enable_framed_settings": 1,
+            "enable_trusted_host_check": 0
+        },
+        "Tracker": {
+            "trust_visitors_cookies": 1,
+            "use_third_party_id_cookie": 1
+        }
+    },
+    "options": {
+    }
+}
