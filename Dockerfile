@@ -36,6 +36,7 @@ RUN curl -fsSL -o /usr/src/piwik/misc/GeoIPCity.dat.gz http://geolite.maxmind.co
 RUN cp -a /usr/src/piwik/* /var/www/html/
 RUN chown -R www-data /var/www/html
 ADD piwik-cli-setup /piwik-cli-setup
+ADD reset.php /var/www/html/
 
 ADD entrypoint.sh /entrypoint.sh
 
