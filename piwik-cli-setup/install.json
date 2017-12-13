@@ -37,6 +37,17 @@
         "Tracker": {
             "trust_visitors_cookies": 1,
             "use_third_party_id_cookie": 1
+        },
+        "Development": {
+            "enabled": 1
+        },
+        "Cache": {
+            "backend": "null"
+        },
+        "Debug": {
+          "always_archive_data_period": 1,
+          "always_archive_data_day": 1,
+          "always_archive_data_range": 1
         }
     },
     "options": {
