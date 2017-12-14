@@ -10,7 +10,7 @@
     "session_save_handler": "dbtable",
     "geo_provider": "geoip_pecl",
     "database": {
-        "host": "db",
+        "host": "localhost",
         "adapter": "Pdo\\Mysql",
         "username": "piwik",
         "password": "piwik",
