@@ -12,6 +12,7 @@ RUN curl -fsSL -o piwik.tar.gz \
 COPY php.ini /usr/local/etc/php/php.ini
 
 RUN cp -a /tmp/piwik/* /var/www/html/
+RUN rm -rf /tmp/piwik
 RUN chown -R www-data /var/www/html
 ADD piwik-cli-setup /piwik-cli-setup
 ADD reset.php /var/www/html/
