@@ -1,4 +1,4 @@
-FROM php:5.6-apache
+FROM php:7-apache
 
 ENV PIWIK_VERSION 3.2.0
 
