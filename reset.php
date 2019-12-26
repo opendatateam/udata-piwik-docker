@@ -37,6 +37,7 @@ $controller->init();
 $logDeleter = StaticContainer::get('Piwik\LogDeleter');
 $rawLogDao = StaticContainer::get('Piwik\DataAccess\RawLogDao');
 
-$logDeleter->deleteVisitsFor(null, null);
+$logDeleter->deleteVisitsFor(null, null, 1);
+$logDeleter->deleteVisitsFor(null, null, 2);
 
 print('OK');
