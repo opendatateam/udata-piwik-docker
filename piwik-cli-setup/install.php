@@ -75,6 +75,8 @@ class PiwikCliInstall {
 		$this->tableCreation();
 		$this->createUser();
 		$this->addWebsite();
+		// add a second website
+		$this->addWebsite();
 		$this->finish();
 		$this->setGeo();
 		$this->setPrivacy();
@@ -107,7 +109,7 @@ class PiwikCliInstall {
 		$config->General['salt'] = Common::generateUniqId();
 		$config->General['installation_in_progress'] = 1;
 		$config->database = $this->config['database'];
-		
+
 		// Connect to the database with retry timeout so any provisioning scripts & DB setup scripts are given a chance
 		$retries = array(10, 20, 30, 40, 50, 60, 70, 80);
 		foreach( $retries as $retry_timeout_index => $retry_timeout ) {
@@ -124,7 +126,7 @@ class PiwikCliInstall {
 		if (!DbHelper::isDatabaseConnectionUTF8()) {	// Exception will be thrown if cannot connect
 			$config->database['charset'] = 'utf8';
 		}
-		
+
 		$config->forceSave();
 	}
 

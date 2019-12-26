@@ -15,7 +15,8 @@
         "username": "piwik",
         "password": "piwik",
         "dbname": "piwik",
-        "tables_prefix": "piwik_"
+        "tables_prefix": "piwik_",
+        "type": "InnoDB"
     },
     "branding": {
         "header_url": "https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.6/assets/png/261d-1f3fb.png"
